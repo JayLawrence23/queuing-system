@@ -175,7 +175,7 @@ const Register = () => {
 
                 </Form>
                 <Button onClick={() => {
-                    history.push("/queuing-system/Login")
+                    history.push("/queuing-system/")
                 }}>
                     Already have an account?
                 </Button>

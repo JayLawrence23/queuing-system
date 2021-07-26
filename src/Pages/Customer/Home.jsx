@@ -32,7 +32,7 @@ const Home = ({ authorized }) => {
     const classes = useStyles();
 
     if (!authorized) {
-        return <Redirect to="/queuing-system/login" />
+        return <Redirect to="/queuing-system/" />
     }
 
     return (

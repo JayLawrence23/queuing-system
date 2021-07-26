@@ -102,7 +102,7 @@ const Layout = ({ children }) => {
                             <Notifications />
                         </Badge>
                     </IconButton>
-                    <Button color="inherit" onClick={() => { history.push('/login')}}>Logout</Button>
+                    <Button color="inherit" onClick={() => { history.push('/queuing-system/')}}>Logout</Button>
                     
                 </Toolbar>
             </AppBar>
