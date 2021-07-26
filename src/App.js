@@ -25,7 +25,7 @@ function App() {
       <Router>
         <div className="App">
           <Switch>
-            <Route exact path="/queuing-system/login">
+            <Route exact path="/queuing-system/">
               <Login />
             </Route>
             <Route path="/queuing-system/register">
