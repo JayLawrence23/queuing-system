@@ -54,7 +54,7 @@ const Ticketing = (props) => {
         <Layout>
             <Container className={classes.root}>
                 <div style={{ display: 'flex', alignItems: 'center', }}>
-                    <IconButton className={classes.backbutton} component={Link} to={{ pathname: "/Home" }}>
+                    <IconButton className={classes.backbutton} component={Link} to={{ pathname: "/queuing-system/Home" }}>
                         <ArrowBackRoundedIcon fontSize="medium" color="primary" className={classes.icon} />
                     </IconButton>
                     <Typography

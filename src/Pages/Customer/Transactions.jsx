@@ -1,9 +1,13 @@
+import Layout from '../../Components/Layout';
+import Table from '../../Components/Table';
 
 
 const Transactions = () => {
-    return ( 
-        <div></div>
+    return (
+        <Layout>
+            <Table />
+        </Layout>
     );
 }
- 
+
 export default Transactions;

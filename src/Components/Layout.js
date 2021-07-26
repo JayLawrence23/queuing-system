@@ -86,12 +86,12 @@ const Layout = ({ children }) => {
         {
             text: "Account",
             icon: <AccountCircleOutlined color="secondary" />,
-            path: '/queuing-system/'
+            path: '/queuing-system/account'
         },
         {
             text: "Transactions",
             icon: <ReceiptOutlined color="secondary" />,
-            path: '/queuing-system/'
+            path: '/queuing-system/transactions'
         }
     ]
 

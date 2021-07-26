@@ -55,6 +55,7 @@ const Ticket = () => {
                     <Box fontWeight="fontWeightBold" fontSize={40}>CS-012</Box>
                     <Box fontSize={18}>Customer Service</Box>
                     <Box fontSize={18}>Jay Lawrence</Box>
+                    <Box fontSize={12} style={{ marginTop: '1rem'}}>Predicted Wait Time: 12 minutes</Box>
                 </Typography>
                 <Divider style={{ margin: '3rem 0 0 0'}}variant="middle" />
                 <div className={classes.bite} style={{ right: -20, bottom: '19%' }}></div>
