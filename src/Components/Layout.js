@@ -1,6 +1,6 @@
 import { makeStyles, Drawer, Typography, ListItem, List, ListItemIcon, ListItemText, Button, IconButton, Badge, Toolbar, AppBar, Avatar } from '@material-ui/core'
 import { ReceiptOutlined, DesktopWindowsOutlined, AppsOutlined, AccountCircleOutlined, Notifications } from '@material-ui/icons'
-import { useHistory, useLocation } from 'react-router-dom';
+import { useHistory, useLocation } from 'react-router';
 import { grey, pink } from '@material-ui/core/colors'
 import { format } from 'date-fns'
 import logo from '../Assets/Images/logo-que.png';
@@ -13,10 +13,16 @@ const useStyles = makeStyles((theme) => {
             width: '100%'
         },
         drawer: {
-            width: drawerWidth
+            width: drawerWidth,
+            [theme.breakpoints.down('sm')]: {
+                width: 60,
+            },
         },
         drawerPaper: {
-            width: drawerWidth
+            width: drawerWidth,
+            [theme.breakpoints.down('sm')]: {
+                width: 60,
+            },
         },
         root: {
             display: 'flex'
@@ -30,6 +36,9 @@ const useStyles = makeStyles((theme) => {
         },
         appbar: {
             width: `calc(100% - ${drawerWidth}px)`,
+            [theme.breakpoints.down('sm')]: {
+                width: `calc(100% - 60px)`,
+            },
         },
         toolbar: theme.mixins.toolbar,
         date: {
@@ -38,6 +47,7 @@ const useStyles = makeStyles((theme) => {
         avatar: {
             height: theme.spacing(7),
             width: theme.spacing(7),
+            marginRight: theme.spacing(2)
         },
         listtext: {
             color: grey[600],
@@ -45,8 +55,8 @@ const useStyles = makeStyles((theme) => {
         },
         headerdrawer: {
             display: 'flex',
-            padding: theme.spacing(2),
-            alignItems: 'center'
+            paddingBlock: theme.spacing(2),
+            alignItems: 'center',
         },
         listitem: {
             borderRadius: theme.spacing(6),
