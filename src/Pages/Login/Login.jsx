@@ -57,7 +57,7 @@ const Login = () => {
             setPasswordError(true);
         }
         if (email && password) {
-            history.push('/Home')
+            history.push('/queuing-system/Home')
         }
         // <Redirect to="/home"/>
     }
