@@ -41,7 +41,7 @@ const Home = ({ authorized }) => {
                 <Grid item sm={12} md={6}>
                     <Paper elevation={1} className={classes.papertitle}>
                         <Typography variant="h2" component="h2" style={{ fontWeight: '600' }}>
-                            BANK REALTIME QUEUING SYSTEM
+                            BANK REAL-TIME QUEUING SYSTEM
                         </Typography>
                         <div className={classes.spacing}></div>
                     </Paper>
