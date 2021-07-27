@@ -1,10 +1,9 @@
-import { Grid, Paper, TextField, Button, Typography, Radio, Checkbox, RadioGroup, FormControlLabel, FormLabel, FormControl } from '@material-ui/core'
+import { Grid, Paper, Button, Typography, } from '@material-ui/core'
 import { useState, useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core'
 import { useForm, Form } from '../../Components/useForm';
 import Controls from '../../Components/Controls';
-import id from 'date-fns/esm/locale/id/index.js';
 
 
 const useStyles = makeStyles((theme) => ({
