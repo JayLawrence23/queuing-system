@@ -37,6 +37,40 @@ const useStyles = makeStyles((theme) => ({
         '&:hover': {
             color: 'white'
         }
+    },
+    callingtitle: {
+        fontWeight: 'bold',
+        [theme.breakpoints.down('sm')]: {
+            fontSize: 30,
+        },
+        [theme.breakpoints.down('xs')]: {
+            fontSize: '5vw',
+        },
+    },
+    callingcontent: {
+        fontWeight: 'bold',
+        [theme.breakpoints.down('sm')]: {
+            fontSize: 18,
+        },
+        [theme.breakpoints.down('xs')]: {
+            fontSize: '4vw',
+        },
+    },
+    countercontainer: {
+        padding: '1rem',
+        textAlign: 'center',
+        borderRadius: 16,
+        background: theme.palette.primary[50],
+        [theme.breakpoints.down('xs')]: {
+            padding: '.5rem',
+        },
+    },
+    waitingcontainer: {
+        paddingBlock: '1rem',
+        textAlign: 'center',
+        borderRadius: 16,
+        background: '#F7F7F7',
+        margin: 5
     }
 }));
 
@@ -62,25 +96,182 @@ const VirtualMonitoring = () => {
                     <Ticket />
                 </Grid>
 
-                <Grid item md={8} xs={12}>
-                    <Grid container>
-                        <Grid item xs={5} style={{ borderRight: '1px gray solid', textAlign: 'center' }}>
+                <Grid item md={8} xs={12} style={{ padding: '1rem' }}>
+                    <Grid container spacing={1}>
+                        <Grid item xs={12}>
                             <Typography
                                 variant="h4"
                                 color="secondary"
                                 component="h4"
-                                style={{ fontWeight: 'bold' }}
+                                className={classes.callingtitle}
                                 gutterBottom
+                                noWrap
+                            >
+                                SERVING
+                            </Typography>
+                        </Grid>
+
+                        <Grid item xs={12} sm={6}>
+                            <Grid container className={classes.countercontainer}>
+                                <Grid item xs={4} style={{ borderRight: '1px orange solid' }}>
+                                    <Typography
+                                        variant="h5"
+                                        color="textPrimary"
+                                        component="h4"
+                                        className={classes.callingcontent}
+                                        gutterBottom
+                                    >
+                                        #1
+                                    </Typography>
+
+                                    <Typography
+                                        variant="h5"
+                                        color="textPrimary"
+                                        component="h4"
+                                        className={classes.callingcontent}
+                                        gutterBottom
+                                    >
+                                        #2
+                                    </Typography>
+
+                                    <Typography
+                                        variant="h5"
+                                        color="textPrimary"
+                                        component="h4"
+                                        className={classes.callingcontent}
+                                        gutterBottom
+                                    >
+                                        #3
+                                    </Typography>
+                                </Grid>
+
+                                <Grid item xs={8}>
+                                    <Typography
+                                        variant="h5"
+                                        color="textPrimary"
+                                        component="h4"
+                                        className={classes.callingcontent}
+                                        gutterBottom
+                                    >
+                                        CS-005
+                                    </Typography>
+
+                                    <Typography
+                                        variant="h5"
+                                        color="textPrimary"
+                                        component="h4"
+                                        className={classes.callingcontent}
+                                        gutterBottom
+                                    >
+                                        WM-047
+                                    </Typography>
+
+                                    <Typography
+                                        variant="h5"
+                                        color="textPrimary"
+                                        component="h4"
+                                        className={classes.callingcontent}
+                                        gutterBottom
+                                    >
+                                        WM-046
+                                    </Typography>
+
+                                </Grid>
+                            </Grid>
+
+                        </Grid>
+
+                        <Grid item xs={12} sm={6}>
+                            <Grid container className={classes.countercontainer}>
+                                <Grid item xs={4} style={{ borderRight: '1px orange solid' }}>
+                                    <Typography
+                                        variant="h5"
+                                        color="textPrimary"
+                                        component="h4"
+                                        className={classes.callingcontent}
+                                        gutterBottom
+                                    >
+                                        #4
+                                    </Typography>
+
+                                    <Typography
+                                        variant="h5"
+                                        color="textPrimary"
+                                        component="h4"
+                                        className={classes.callingcontent}
+                                        gutterBottom
+                                    >
+                                        #5
+                                    </Typography>
+
+                                    <Typography
+                                        variant="h5"
+                                        color="textPrimary"
+                                        component="h4"
+                                        className={classes.callingcontent}
+                                        gutterBottom
+                                    >
+                                        #6
+                                    </Typography>
+                                </Grid>
+
+                                <Grid item xs={8}>
+                                    <Typography
+                                        variant="h5"
+                                        color="textPrimary"
+                                        component="h4"
+                                        className={classes.callingcontent}
+                                        gutterBottom
+                                    >
+                                        CS-007
+                                    </Typography>
+
+                                    <Typography
+                                        variant="h5"
+                                        color="textPrimary"
+                                        component="h4"
+                                        className={classes.callingcontent}
+                                        gutterBottom
+                                    >
+                                        WM-044
+                                    </Typography>
+
+                                    <Typography
+                                        variant="h5"
+                                        color="textPrimary"
+                                        component="h4"
+                                        className={classes.callingcontent}
+                                        gutterBottom
+                                    >
+                                        CS-008
+                                    </Typography>
+
+                                </Grid>
+                            </Grid>
+
+                        </Grid>
+
+                        <Grid item xs={12}>
+                            <Typography
+                                variant="h4"
+                                color="secondary"
+                                component="h4"
+                                className={classes.callingtitle}
+                                gutterBottom
+                                noWrap
                             >
                                 WAITING
                             </Typography>
+                        </Grid>
+
+                        <Grid item xs={5} sm={3} className={classes.waitingcontainer}>
 
                             {/* { For the mean time } */}
                             <Typography
                                 variant="h5"
                                 color="textPrimary"
                                 component="h4"
-                                style={{ fontWeight: 'bold' }}
+                                className={classes.callingcontent}
                                 gutterBottom
                             >
                                 CS-012
@@ -90,7 +281,7 @@ const VirtualMonitoring = () => {
                                 variant="h5"
                                 color="textPrimary"
                                 component="h4"
-                                style={{ fontWeight: 'bold' }}
+                                className={classes.callingcontent}
                                 gutterBottom
                             >
                                 WM-052
@@ -100,7 +291,7 @@ const VirtualMonitoring = () => {
                                 variant="h5"
                                 color="textPrimary"
                                 component="h4"
-                                style={{ fontWeight: 'bold' }}
+                                className={classes.callingcontent}
                                 gutterBottom
                             >
                                 BP-002
@@ -108,51 +299,79 @@ const VirtualMonitoring = () => {
 
                         </Grid>
 
-                        <Grid item xs={7} style={{ textAlign: 'center' }}>
-                            <Typography
-                                variant="h4"
-                                color="secondary"
-                                component="h4"
-                                style={{ fontWeight: 'bold' }}
-                                gutterBottom
-                            >
-                                SERVING
-                            </Typography>
+                        <Grid item xs={5} sm={3} className={classes.waitingcontainer}>
 
                             {/* { For the mean time } */}
                             <Typography
                                 variant="h5"
                                 color="textPrimary"
                                 component="h4"
-                                style={{ fontWeight: 'bold' }}
+                                className={classes.callingcontent}
                                 gutterBottom
                             >
-                                CS-012
+                                CS-011
                             </Typography>
 
                             <Typography
                                 variant="h5"
                                 color="textPrimary"
                                 component="h4"
-                                style={{ fontWeight: 'bold' }}
+                                className={classes.callingcontent}
                                 gutterBottom
                             >
-                                WM-052
+                                WM-051
                             </Typography>
 
                             <Typography
                                 variant="h5"
                                 color="textPrimary"
                                 component="h4"
-                                style={{ fontWeight: 'bold' }}
+                                className={classes.callingcontent}
                                 gutterBottom
                             >
-                                BP-002
+                                BP-001
+                            </Typography>
+
+                        </Grid>
+
+                        <Grid item xs={5} sm={3} className={classes.waitingcontainer}>
+
+                            {/* { For the mean time } */}
+                            <Typography
+                                variant="h5"
+                                color="textPrimary"
+                                component="h4"
+                                className={classes.callingcontent}
+                                gutterBottom
+                            >
+                                CS-010
+                            </Typography>
+
+                            <Typography
+                                variant="h5"
+                                color="textPrimary"
+                                component="h4"
+                                className={classes.callingcontent}
+                                gutterBottom
+                            >
+                                WM-050
+                            </Typography>
+
+                            <Typography
+                                variant="h5"
+                                color="textPrimary"
+                                component="h4"
+                                className={classes.callingcontent}
+                                gutterBottom
+                            >
+                                CS-009
                             </Typography>
 
                         </Grid>
                     </Grid>
                 </Grid>
+
+
 
             </Grid>
         </Layout>

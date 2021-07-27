@@ -37,6 +37,15 @@ const useStyles = makeStyles((theme) => ({
         '&:hover': { 
             color: 'white'
         } 
+    },
+    divider: {
+        content: '',
+        width: '100%',
+        height: .7, 
+        opacity: .4,
+        background: 'gray',
+        position: 'absolute',
+        bottom: '24%'
     }
 }));
 
@@ -55,9 +64,10 @@ const Ticket = () => {
                     <Box fontWeight="fontWeightBold" fontSize={40}>CS-012</Box>
                     <Box fontSize={18}>Customer Service</Box>
                     <Box fontSize={18}>Jay Lawrence</Box>
-                    <Box fontSize={12} style={{ marginTop: '1rem'}}>Predicted Wait Time: 12 minutes</Box>
+                    <Box fontSize={12} style={{ marginBlock: '1rem'}}>Predicted Wait Time: 12 minutes</Box>
                 </Typography>
-                <Divider style={{ margin: '3rem 0 0 0'}}variant="middle" />
+                
+                <div className={classes.divider} ></div>
                 <div className={classes.bite} style={{ right: -20, bottom: '19%' }}></div>
                 <div className={classes.bite} style={{ left: -20, bottom: '19%'}}></div>
                 <Typography variant="caption" display="block" style={{ margin: '2rem 0'}} gutterBottom>
