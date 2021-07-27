@@ -11,7 +11,7 @@ import Account from './Pages/Customer/Account'
 
 const theme = createTheme({
   palette: {
-    primary: pink,
+    primary: deepOrange,
     secondary: yellow,
   },
   typography: {
