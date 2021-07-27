@@ -75,7 +75,7 @@ const ServiceCards = () => {
                 <ButtonBase component={Link} to={{ pathname: "/queuing-system/ticketing", state}}>
                     <Paper elevation={0} className={classes.subservice}>
                         <Typography variant="h4" component="h4" style={{color: grey[900], }} gutterBottom>
-                            Bill's Payment<span className={classes.subdot}>.</span>
+                            Bills Payment<span className={classes.subdot}>.</span>
                         </Typography>
                         <Divider className={classes.divider} />
                         <Typography variant="subtitle1" style={{color: grey[900], marginTop: 6}} gutterBottom>
