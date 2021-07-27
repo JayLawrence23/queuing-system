@@ -1,10 +1,8 @@
 import { useState } from 'react'
-import { Grid, Paper, Container, Button, Typography, Box, Divider, IconButton } from '@material-ui/core'
+import { Grid, Paper, Typography } from '@material-ui/core'
 import Layout from '../../Components/Layout';
 import { makeStyles } from '@material-ui/core'
-import logo from '../../Assets/Images/logo-que.png'
 import { Link, useLocation } from 'react-router-dom';
-import ArrowBackRoundedIcon from '@material-ui/icons/ArrowBackRounded';
 import Controls from '../../Components/Controls';
 import Ticket from '../../Components/Ticket';
 
@@ -70,7 +68,6 @@ const useStyles = makeStyles((theme) => ({
         textAlign: 'center',
         borderRadius: 16,
         background: '#F7F7F7',
-        margin: 5
     }
 }));
 
@@ -264,109 +261,113 @@ const VirtualMonitoring = () => {
                             </Typography>
                         </Grid>
 
-                        <Grid item xs={5} sm={3} className={classes.waitingcontainer}>
+                        <Grid item xs={6} sm={4}>
 
-                            {/* { For the mean time } */}
-                            <Typography
-                                variant="h5"
-                                color="textPrimary"
-                                component="h4"
-                                className={classes.callingcontent}
-                                gutterBottom
-                            >
-                                CS-012
-                            </Typography>
+                            <Paper elevation={0} className={classes.waitingcontainer}>
+                                {/* { For the mean time } */}
+                                <Typography
+                                    variant="h5"
+                                    color="textPrimary"
+                                    component="h4"
+                                    className={classes.callingcontent}
+                                    gutterBottom
+                                >
+                                    CS-012
+                                </Typography>
 
-                            <Typography
-                                variant="h5"
-                                color="textPrimary"
-                                component="h4"
-                                className={classes.callingcontent}
-                                gutterBottom
-                            >
-                                WM-052
-                            </Typography>
+                                <Typography
+                                    variant="h5"
+                                    color="textPrimary"
+                                    component="h4"
+                                    className={classes.callingcontent}
+                                    gutterBottom
+                                >
+                                    WM-052
+                                </Typography>
 
-                            <Typography
-                                variant="h5"
-                                color="textPrimary"
-                                component="h4"
-                                className={classes.callingcontent}
-                                gutterBottom
-                            >
-                                BP-002
-                            </Typography>
-
-                        </Grid>
-
-                        <Grid item xs={5} sm={3} className={classes.waitingcontainer}>
-
-                            {/* { For the mean time } */}
-                            <Typography
-                                variant="h5"
-                                color="textPrimary"
-                                component="h4"
-                                className={classes.callingcontent}
-                                gutterBottom
-                            >
-                                CS-011
-                            </Typography>
-
-                            <Typography
-                                variant="h5"
-                                color="textPrimary"
-                                component="h4"
-                                className={classes.callingcontent}
-                                gutterBottom
-                            >
-                                WM-051
-                            </Typography>
-
-                            <Typography
-                                variant="h5"
-                                color="textPrimary"
-                                component="h4"
-                                className={classes.callingcontent}
-                                gutterBottom
-                            >
-                                BP-001
-                            </Typography>
+                                <Typography
+                                    variant="h5"
+                                    color="textPrimary"
+                                    component="h4"
+                                    className={classes.callingcontent}
+                                    gutterBottom
+                                >
+                                    BP-002
+                                </Typography>
+                            </Paper>
 
                         </Grid>
 
-                        <Grid item xs={5} sm={3} className={classes.waitingcontainer}>
+                        <Grid item xs={6} sm={4}>
 
-                            {/* { For the mean time } */}
-                            <Typography
-                                variant="h5"
-                                color="textPrimary"
-                                component="h4"
-                                className={classes.callingcontent}
-                                gutterBottom
-                            >
-                                CS-010
-                            </Typography>
+                            <Paper elevation={0} className={classes.waitingcontainer}>
+                                <Typography
+                                    variant="h5"
+                                    color="textPrimary"
+                                    component="h4"
+                                    className={classes.callingcontent}
+                                    gutterBottom
+                                >
+                                    CS-011
+                                </Typography>
 
-                            <Typography
-                                variant="h5"
-                                color="textPrimary"
-                                component="h4"
-                                className={classes.callingcontent}
-                                gutterBottom
-                            >
-                                WM-050
-                            </Typography>
+                                <Typography
+                                    variant="h5"
+                                    color="textPrimary"
+                                    component="h4"
+                                    className={classes.callingcontent}
+                                    gutterBottom
+                                >
+                                    WM-051
+                                </Typography>
 
-                            <Typography
-                                variant="h5"
-                                color="textPrimary"
-                                component="h4"
-                                className={classes.callingcontent}
-                                gutterBottom
-                            >
-                                CS-009
-                            </Typography>
+                                <Typography
+                                    variant="h5"
+                                    color="textPrimary"
+                                    component="h4"
+                                    className={classes.callingcontent}
+                                    gutterBottom
+                                >
+                                    BP-001
+                                </Typography>
+                            </Paper>
 
+
+                        </Grid>
+
+                        <Grid item xs={6} sm={4}>
+
+                            <Paper elevation={0} className={classes.waitingcontainer}>
+                                <Typography
+                                    variant="h5"
+                                    color="textPrimary"
+                                    component="h4"
+                                    className={classes.callingcontent}
+                                    gutterBottom
+                                >
+                                    CS-010
+                                </Typography>
+
+                                <Typography
+                                    variant="h5"
+                                    color="textPrimary"
+                                    component="h4"
+                                    className={classes.callingcontent}
+                                    gutterBottom
+                                >
+                                    WM-050
+                                </Typography>
+
+                                <Typography
+                                    variant="h5"
+                                    color="textPrimary"
+                                    component="h4"
+                                    className={classes.callingcontent}
+                                    gutterBottom
+                                >
+                                    CS-009
+                                </Typography>
+                            </Paper>
                         </Grid>
                     </Grid>
                 </Grid>

@@ -1,8 +1,7 @@
 import { useState } from 'react'
-import { Grid, Paper, Container, Button, Typography, Box, Divider, IconButton } from '@material-ui/core'
+import { Container, Typography, IconButton } from '@material-ui/core'
 import Layout from '../../Components/Layout';
 import { makeStyles } from '@material-ui/core'
-import logo from '../../Assets/Images/logo-que.png'
 import { Link, useHistory, useLocation } from 'react-router-dom';
 import ArrowBackRoundedIcon from '@material-ui/icons/ArrowBackRounded';
 import Controls from '../../Components/Controls';

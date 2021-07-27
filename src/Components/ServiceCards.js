@@ -72,7 +72,7 @@ const ServiceCards = () => {
             </Grid>
 
             <Grid item xs={12} sm={6} md={3}>
-                <ButtonBase>
+                <ButtonBase component={Link} to={{ pathname: "/queuing-system/ticketing", state}}>
                     <Paper elevation={0} className={classes.subservice}>
                         <Typography variant="h4" component="h4" style={{color: grey[900], }} gutterBottom>
                             Bill's Payment<span className={classes.subdot}>.</span>
@@ -93,7 +93,7 @@ const ServiceCards = () => {
             </Grid>
 
             <Grid item xs={12} sm={6} md={3}>
-                <ButtonBase>
+                <ButtonBase component={Link} to={{ pathname: "/queuing-system/ticketing", state}}>
                     <Paper elevation={0} className={classes.subservice}>
                         <Typography variant="h4" component="h4" style={{color: grey[900], }} gutterBottom>
                             Deposit Money<span className={classes.subdot}>.</span>
@@ -114,7 +114,7 @@ const ServiceCards = () => {
             </Grid>
 
             <Grid item xs={12} sm={6} md={3}>
-                <ButtonBase>
+                <ButtonBase component={Link} to={{ pathname: "/queuing-system/ticketing", state}}>
                     <Paper elevation={0} className={classes.subservice}>
                         <Typography variant="h4" component="h4" style={{color: grey[900], }} gutterBottom>
                             Withdraw Money<span className={classes.subdot}>.</span>
